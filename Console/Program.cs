@@ -84,7 +84,12 @@ namespace TravisCILab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            double answer = double.Parse(x);
+            for(int i = 0; i < int.Parse(y) - 1; i++)
+            {
+                answer = answer * double.Parse(x);
+            }
+            return answer;
         }
     }
 
